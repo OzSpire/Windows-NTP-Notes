@@ -34,6 +34,10 @@ if target is [Local CMOS Clock], change [Type] to [NTP]
 next, change to NTP server with the same way in [1] section
 >Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters" -Name "Type" -Value "NTP"
 
+To configure a client computer for automatic domain time synchronization
+>w32tm /config /syncfromflags:domhier /update
+
+
 
 ## NT5DS
 
