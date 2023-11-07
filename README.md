@@ -22,7 +22,7 @@ Query the status of the time service
 
 >w32tm /query /status
 
-in AD Domain Environment, [Type] is generally set to [NT5DS] for client computers.
+in AD Domain Environment, [Type] is generally set to [NT5DS] for domain members.
 >(Get-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters").GetValue("Type")
 
 >NT5DS
