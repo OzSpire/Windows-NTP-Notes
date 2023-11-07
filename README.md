@@ -33,6 +33,7 @@ next, change to NTP server with the same way in [1] section
 >Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters" -Name "Type" -Value "NTP"
 
 
+
 #NT5DS
 
 `NT5DS` stands for “Net Time 5 Directory Service.” It’s a mode of time synchronization utilized by the Windows Time Service (`w32time`) on computers that are members of an Active Directory (AD) domain.
