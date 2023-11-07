@@ -27,11 +27,12 @@ in AD Domain Environment, [Type] is generally set to [NT5DS] for domain members.
 
 >NT5DS
 
+As part of the time convergence process, domain members attempt to synchronize time with any domain controller located in the same domain. If the computer is a domain controller, it attempts to synchronize with a more authoritative domain controller.
+
 on a Domain Controller of Forrest Root,
 if target is [Local CMOS Clock], change [Type] to [NTP]
 next, change to NTP server with the same way in [1] section
 >Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters" -Name "Type" -Value "NTP"
-
 
 
 ## NT5DS
