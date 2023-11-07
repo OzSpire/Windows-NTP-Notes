@@ -24,6 +24,7 @@ Query the status of the time service
 
 in AD Domain Environment, [Type] is generally set to [NT5DS]
 >(Get-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters").GetValue("Type")
+
 >NT5DS
 
 on a Domain Controller of Forrest Root,
