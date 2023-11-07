@@ -34,6 +34,7 @@ next, change to NTP server with the same way in [1] section
 
 
 ##NT5DS
+
 `NT5DS` stands for “Net Time 5 Directory Service.” It’s a mode of time synchronization utilized by the Windows Time Service (`w32time`) on computers that are members of an Active Directory (AD) domain.
 
 When a Windows machine is configured to use `NT5DS` mode (which is the default for domain-joined computers), it will synchronize its time hierarchically with the domain’s structure.
