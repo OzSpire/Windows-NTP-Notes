@@ -2,7 +2,7 @@
 
 This is just a collection of notes on how to configure NTP time sources in Windows.
 
-In Powershell:-
+In elevated Powershell:-
 
 Query the time source.
 
@@ -23,8 +23,8 @@ Query the status of the time service
 >w32tm /query /status
 
 in AD Domain Environment, [Type] is generally set to [NT5DS]
-(Get-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters").GetValue("Type")
-NT5DS
+>(Get-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\w32time\Parameters").GetValue("Type")
+>NT5DS
 
 on a Domain Controller of Forrest Root,
 if target is [Local CMOS Clock], change [Type] to [NTP]
